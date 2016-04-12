@@ -25,13 +25,9 @@ deb-amd64 http://archive.ubuntu.com/ubuntu trusty-updates main main/debian-insta
 deb-i386 http://archive.ubuntu.com/ubuntu trusty main main/debian-installer restricted restricted/debian-installer universe multiverse
 deb-i386 http://archive.ubuntu.com/ubuntu trusty-security main restricted universe multiverse
 deb-i386 http://archive.ubuntu.com/ubuntu trusty-updates main main/debian-installer restricted restricted/debian-installer universe multiverse
-#deb http://archive.ubuntu.com/ubuntu trusty-proposed main restricted universe multiverse
-#deb http://archive.ubuntu.com/ubuntu trusty-backports main restricted universe multiverse
 
-deb-src http://archive.ubuntu.com/ubuntu trusty main main/debian-installer restricted restricted/debian-installer universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu trusty main restricted universe multiverse
 deb-src http://archive.ubuntu.com/ubuntu trusty-security main restricted universe multiverse
 deb-src http://archive.ubuntu.com/ubuntu trusty-updates main main/debian-installer restricted restricted/debian-installer universe multiverse
-#deb-src http://archive.ubuntu.com/ubuntu trusty-proposed main restricted universe multiverse
-#deb-src http://archive.ubuntu.com/ubuntu trusty-backports main restricted universe multiverse
 
 clean http://archive.ubuntu.com/ubuntu
