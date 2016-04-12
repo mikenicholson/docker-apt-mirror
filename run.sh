@@ -5,8 +5,10 @@ echo "Starting webserver"
 nginx -g 'daemon off;' &
 
 # Run once to perform initial sync
-echo "Performing intial sync"
-/usr/bin/apt-mirror
+if [ -z "$SKIP_INITIAL_SYNC" ]; then
+    echo "Performing intial sync"
+    /usr/bin/apt-mirror
+fi
 
 # Start cron to force nightly syncs
 # Don't start cron before the first call to apt-mirror
