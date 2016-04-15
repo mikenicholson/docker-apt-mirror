@@ -1,1 +1,1 @@
-30 02 * * *     root  /usr/bin/apt-mirror 2>&1 1>/mirror/apt-mirror.log
+30 02 * * *     root  /usr/bin/apt-mirror &>/var/log/apt-mirror.log
