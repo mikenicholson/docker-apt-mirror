@@ -7,7 +7,7 @@ nginx -g 'daemon off;' &
 # Run once to perform initial sync
 if [ -z "$SKIP_INITIAL_SYNC" ]; then
     echo "Performing intial sync"
-    /usr/bin/apt-mirror
+    /usr/bin/apt-mirror "${APT_MIRROR_CONFIG_FILE}"
 fi
 
 # Start cron to force nightly syncs

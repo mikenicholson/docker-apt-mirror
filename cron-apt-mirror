@@ -1,1 +1,1 @@
-30 02 * * *     root  /usr/bin/apt-mirror &>/var/log/apt-mirror.log
+30 02 * * *     root  /usr/bin/apt-mirror "${APT_MIRROR_CONFIG_FILE}" &>/var/log/apt-mirror.log
